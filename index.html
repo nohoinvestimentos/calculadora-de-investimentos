@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Investimentos - NOHO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/NOHO_INVESTIMENTO.svg" alt="NOHO Investimentos" class="logo">
+            <h1>Calculadora de Investimentos</h1>
+            <h2>Faça sua simulação</h2>
+        </header>
+        <main>
+            <form id="investment-form">
+                <div class="form-group">
+                    <label for="initial-investment">Investimento Inicial (R$):</label>
+                    <input type="text" id="initial-investment" value="R$ 0,00" required>
+                </div>
+                <div class="form-group">
+                    <label for="monthly-contribution">Aporte Mensal (R$):</label>
+                    <input type="text" id="monthly-contribution" value="R$ 0,00" required>
+                </div>
+                <div class="form-group">
+                    <label for="months">Tempo em que o valor ficará investido (meses):</label>
+                    <input type="number" id="months" required>
+                </div>
+                <div class="form-group">
+                    <label for="other-rate">Comparar com outros investimentos no mercado (insira a % do rendimento ao mês):</label>
+                    <input type="text" id="other-rate" value="0,0%" required>
+                </div>
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="result"></div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Myriad Pro', sans-serif;
+    background-color: #fcfcfc;
+    color: #020202;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/background.png'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 10px; /* Ajuste do espaçamento entre logo e título */
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px; /* Ajuste do espaçamento entre logo e título */
+}
+
+h1 {
+    color: #bc8600;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #020202;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    background-color: #bc8600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1em; /* Aumentar o tamanho da fonte */
+    font-weight: bold; /* Deixar a fonte em negrito */
+}
+
+button:hover {
+    background-color: #020202;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
