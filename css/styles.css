@@ -5,9 +5,10 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('images/background.png'); /* Imagem de fundo */
     background-size: cover;
     background-position: center;
@@ -22,16 +23,19 @@ body {
     max-width: 600px;
     width: 100%;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    margin-bottom: 10px; /* Ajuste do espaçamento entre logo e título */
+    margin-bottom: 5px; /* Ajuste do espaçamento entre logo e título */
 }
 
 .logo {
     max-width: 150px;
     height: auto;
-    margin-bottom: 10px; /* Ajuste do espaçamento entre logo e título */
+    margin-bottom: 5px; /* Ajuste do espaçamento entre logo e título */
 }
 
 h1 {
@@ -88,4 +92,23 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
